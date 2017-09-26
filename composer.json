@@ -1,0 +1,20 @@
+{
+    "name": "rowanlibraries/voyagervxws",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Philip Shafer",
+            "email": "shafer@rowan.edu"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/dom-crawler": "^3.3",
+        "symfony/css-selector": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "VoyagerXWS\\": "src/VoyagerXWS"
+        }
+    }
+}
