@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Test suite for VoyagerXWS API Client and Services">
+            <directory>./tests/</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <server name="API_BASE" value="http://your-voyager-server:[vxws port]/vxws/" />
+        <get name="test_bibid" value="[a valid bibid]"/>
+        <get name="online_bibid" value="[a valid bidid with 856 field]" />
+    </php>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
