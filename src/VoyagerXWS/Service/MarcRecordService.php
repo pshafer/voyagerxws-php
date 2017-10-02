@@ -2,9 +2,7 @@
 
 namespace VoyagerXWS\Service;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
-
+use VoyagerXWS\Client\VoyagerXWSClient;
 use VoyagerXWS\Exceptions\ServiceException;
 use VoyagerXWS\Response\MarcRecordResponse;
 
@@ -13,22 +11,32 @@ class MarcRecordService
 {
     private $client;
 
-    public function __construct (Client $client) {
+    /**
+     * MarcRecordService constructor.
+     * @param \VoyagerXWS\Client\VoyagerXWSClient $client
+     */
+    public function __construct (VoyagerXWSClient $client) {
         $this->client = $client;
     }
 
+    /**
+     * Returns a MarcRecordResponse for the provided bibid
+     *
+     * @param $bibid
+     *
+     * @return \VoyagerXWS\Response\MarcRecordResponse
+     *
+     * @throws \VoyagerXWS\Exceptions\ServiceException
+     */
     public function getRecord($bibid)
     {
-        $request = new Request('GET','record/' . $bibid . '/?view=full');
-        $response = $this->client->send($request);
-
-        if($response->getStatusCode() === 200) {
-            $body = $response->getBody()->getContents();
-
+        $response = $this->client->getMarcRecord(['bibid' => $bibid ]);
+        if($response['statusCode'] === 200) {
+            $body = $response['body']->getContents();
             return new MarcRecordResponse($body);
         }
 
-        throw new ServiceException($response->getStatusCode(), "An error occurred communicating with API");
+        throw new ServiceException($response['statusResponse'], $response['statusCode']);
 
     }
 }

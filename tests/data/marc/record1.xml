@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <reply-text>ok</reply-text>
+    <reply-code>0</reply-code>
+    <record>
+        <info type="holdings" href="http://library.rowan.edu:7014/vxws/record/583035/holdings"/>
+        <info type="items" href="http://library.rowan.edu:7014/vxws/record/583035/items"/>
+        <marcRecord>
+            <leader>01717cam a2200421Ia 4500</leader>
+            <controlfield tag="001">583035</controlfield>
+            <controlfield tag="005">20150731145706.0</controlfield>
+            <controlfield tag="008">100617s2010 nyua 001 0 eng d</controlfield>
+            <datafield ind2=" " ind1=" " tag="020">
+                <subfield code="a">1430227931</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="020">
+                <subfield code="a">9781430227939</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="035">
+                <subfield code="a">(OCoLC)449843669</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="035">
+                <subfield code="a">(OCoLC)449843669</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="040">
+                <subfield code="a">BTCTA</subfield>
+                <subfield code="c">BTCTA</subfield>
+                <subfield code="d">SA$</subfield>
+                <subfield code="d">EINCP</subfield>
+                <subfield code="d">YDXCP</subfield>
+                <subfield code="d">CDX</subfield>
+                <subfield code="d">LML</subfield>
+                <subfield code="d">NJG</subfield>
+                <subfield code="d">UtOrBLW</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="049">
+                <subfield code="a">NJGA</subfield>
+            </datafield>
+            <datafield ind2="4" ind1="0" tag="082">
+                <subfield code="a">005.133</subfield>
+                <subfield code="2">22</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="090">
+                <subfield code="a">QA76.73.P22</subfield>
+                <subfield code="b">L44 2010</subfield>
+            </datafield>
+            <datafield ind2=" " ind1="1" tag="100">
+                <subfield code="a">Lee, James,</subfield>
+                <subfield code="d">1962-</subfield>
+            </datafield>
+            <datafield ind2="0" ind1="1" tag="245">
+                <subfield code="a">Beginning Perl /</subfield>
+                <subfield code="c">James Lee with Simon Cozens.</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="250">
+                <subfield code="a">Third edition.</subfield>
+            </datafield>
+            <datafield ind2="1" ind1=" " tag="264">
+                <subfield code="a">New York :</subfield>
+                <subfield code="b">Apress,</subfield>
+                <subfield code="c">[2010]</subfield>
+            </datafield>
+            <datafield ind2="2" ind1=" " tag="264">
+                <subfield code="b">Distributed to the book trade worldwide by Springer-Verlag New York.</subfield>
+            </datafield>
+            <datafield ind2="4" ind1=" " tag="264">
+                <subfield code="c">©2010</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="300">
+                <subfield code="a">xxix, 428 pages :</subfield>
+                <subfield code="b">illustrations ;</subfield>
+                <subfield code="c">24 cm.</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="336">
+                <subfield code="a">text</subfield>
+                <subfield code="b">txt</subfield>
+                <subfield code="2">rdacontent</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="337">
+                <subfield code="a">unmediated</subfield>
+                <subfield code="b">n</subfield>
+                <subfield code="2">rdamedia</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="338">
+                <subfield code="a">volume</subfield>
+                <subfield code="b">nc</subfield>
+                <subfield code="2">rdacarrier</subfield>
+            </datafield>
+            <datafield ind2=" " ind1="1" tag="490">
+                <subfield code="a">The expert's voice in open source</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="500">
+                <subfield code="a">"Covers Perl 5.10"--Cover.</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="500">
+                <subfield code="a">Includes index.</subfield>
+            </datafield>
+            <datafield ind2=" " ind1="0" tag="505">
+                <subfield code="a">First steps in Perl -- Scalars -- Control flow constructs -- Lists and arrays --
+                    Hashes -- Subroutines/functions -- Regular expressions -- Files and data -- String processing --
+                    Interfacing to the operating system -- References -- Modules -- Object-oriented Perl -- Introduction
+                    to CGI -- Perl and DBI.
+                </subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="520">
+                <subfield code="a">"Perl for those who missed it the first time around: learn about the duct tape for
+                    the web, the cloud and system administration"--Cover.
+                </subfield>
+            </datafield>
+            <datafield ind2=" " ind1="8" tag="521">
+                <subfield code="a">"User level: beginning."</subfield>
+            </datafield>
+            <datafield ind2="0" ind1=" " tag="650">
+                <subfield code="a">Computer programming.</subfield>
+            </datafield>
+            <datafield ind2="0" ind1=" " tag="650">
+                <subfield code="a">Perl (Computer program language)</subfield>
+            </datafield>
+            <datafield ind2=" " ind1="1" tag="700">
+                <subfield code="a">Cozens, Simon.</subfield>
+            </datafield>
+            <datafield ind2="0" ind1=" " tag="830">
+                <subfield code="a">Expert's voice in open source.</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="994">
+                <subfield code="a">C0</subfield>
+                <subfield code="b">NJG</subfield>
+            </datafield>
+            <datafield ind2=" " ind1=" " tag="998">
+                <subfield code="a">UtOrBLW</subfield>
+            </datafield>
+        </marcRecord>
+    </record>
+</response>

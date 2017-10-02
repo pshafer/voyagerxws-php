@@ -1,0 +1,66 @@
+{
+  "name": "VoaygerVXWS",
+  "apiVersion": "2012-10-14",
+  "description": "Voyager Xml Web Services API for Ex Libris Voyager Catalog",
+  "operations": {
+    "getMarcRecord": {
+      "httpMethod": "GET",
+      "uri": "record/{bibid}{?view}",
+      "summary": "Gets Marc XML Record",
+      "responseModel": "RecordResponse",
+      "parameters": {
+        "bibid": {
+          "location": "uri",
+          "type": "string",
+          "required": true
+        },
+        "view": {
+          "location": "query",
+          "type": "string",
+          "required": true,
+          "default": "full",
+          "sendAs": "view"
+        }
+      }
+    },
+    "getItemRecords": {
+      "httpMethod": "GET",
+      "uri": "record/{bibid}/items{?view}",
+      "summary": "Gets Marc XML Record",
+      "responseModel": "RecordResponse",
+      "parameters": {
+        "bibid": {
+          "location": "uri",
+          "type": "string",
+          "required": true
+        },
+        "view": {
+          "location": "query",
+          "type": "string",
+          "required": true,
+          "default": "full",
+          "sendAs": "view"
+        }
+      }
+    }
+  },
+  "models": {
+    "RecordResponse": {
+      "type": "object",
+      "properties": {
+        "statusCode": {
+          "location": "statusCode",
+          "type": "integer"
+        },
+        "statusResponse": {
+          "location": "reasonPhrase",
+          "type": "string"
+        },
+        "body": {
+          "type": "string",
+          "location": "body"
+        }
+      }
+    }
+  }
+}

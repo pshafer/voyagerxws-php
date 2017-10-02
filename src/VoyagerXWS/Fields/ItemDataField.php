@@ -1,6 +1,6 @@
 <?php
 
-namespace VoyagerXWS\Response\Fields;
+namespace VoyagerXWS\Fields;
 
 use Symfony\Component\DomCrawler\Crawler;
 use \DOMNode;

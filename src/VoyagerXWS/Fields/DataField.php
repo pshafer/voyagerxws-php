@@ -3,7 +3,6 @@
 namespace VoyagerXWS\Fields;
 
 use Symfony\Component\DomCrawler\Crawler;
-use VoyagerXWS\Fields\Field;
 
 class DataField extends Field
 {
@@ -30,13 +29,30 @@ class DataField extends Field
 
     }
 
+    /**
+     * Returns the array of subfields
+     *
+     * @return array of subfields
+     */
     public function getSubfields()
     {
         return $this->subfields;
     }
 
+    /**
+     * Returns the value of the provided subfield code
+     *
+     * @param $code the code of the subfield to retrieve
+     *
+     * @return mixed|null returns the value of the subfield or null if its not found
+     */
     public function getSubfield($code)
     {
-        return $this->subfields[$code];
+        if(array_key_exists($code, $this->subfields)){
+            return $this->subfields[$code];
+        }else{
+            return null;
+        }
+
     }
 }

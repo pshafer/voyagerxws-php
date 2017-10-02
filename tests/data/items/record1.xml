@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response>
+    <reply-text>ok</reply-text>
+    <reply-code>0</reply-code>
+    <items>
+        <institution id="LOCAL">
+            <instName>Rowan University Libraries</instName>
+            <item href="http://library.rowan.edu:7014/vxws/record/583035/items/552054">
+                <itemData id="2" name="permLocation" code="Main">Campbell Library Stacks (3rd - 4th Floors)</itemData>
+                <itemData id="0" name="tempLocation"/>
+                <itemData id="2" name="location" code="Main">Campbell Library Stacks (3rd - 4th Floors)</itemData>
+                <itemData name="callNumber">QA76.73.P22 L44 2010</itemData>
+                <itemData name="copy">c. 0</itemData>
+                <itemData name="itemBarcode">33001009547380</itemData>
+                <itemData name="enumeration"/>
+                <itemData name="chron"/>
+                <itemData name="year"/>
+                <itemData name="caption"/>
+                <itemData name="freeText"/>
+                <itemData name="typeCode">2</itemData>
+                <itemData name="typeDesc">Book</itemData>
+                <itemData name="tempType">0</itemData>
+                <itemData name="tempDesc"/>
+                <itemData name="mediaType">0</itemData>
+                <itemData name="mediadesc"/>
+                <itemData name="itemStatus">Available</itemData>
+                <itemData name="itemStatusCode">1</itemData>
+                <itemData name="itemDueDate"/>
+                <itemData name="itemStatusDate">2016-12-17 00:05:14</itemData>
+                <itemData name="todayDate">2017-10-02 10:48:53</itemData>
+                <itemData name="pieceCount">1</itemData>
+                <itemData name="amount">0.00</itemData>
+                <itemData name="spineLabel"/>
+                <itemData name="historicalCharges">6</itemData>
+                <itemData name="historicalBrowses">6</itemData>
+                <itemData name="historicalBookings">0</itemData>
+                <itemData name="recallsPlaced">0</itemData>
+                <itemData name="holdsPlaced">0</itemData>
+                <itemData name="itemNote">0</itemData>
+                <itemData name="reserveCharges">0</itemData>
+                <itemData name="onReserve">N</itemData>
+                <itemData name="shortLoanChgs">0</itemData>
+                <itemData name="createDate">2010-08-05</itemData>
+                <itemData name="createOperId">CollinsB</itemData>
+                <itemData name="createLocation">Campbell Library</itemData>
+                <itemData name="modifyDate">2016-01-12</itemData>
+                <itemData name="modifyOperId">BrownA</itemData>
+                <itemData name="modifyLocation">Campbell Library</itemData>
+                <itemData name="lastTrans">2016-12-16 07:38:58</itemData>
+                <itemData name="clusterId">1</itemData>
+                <itemData name="bibId">583035</itemData>
+                <itemData name="libraryId">1</itemData>
+                <itemData name="historicalReserveCharges">0</itemData>
+                <itemData name="holdLocation"/>
+                <itemData name="patronGroupCode"/>
+                <itemData name="lastName"/>
+                <itemData name="firstName"/>
+            </item>
+        </institution>
+    </items>
+</response>

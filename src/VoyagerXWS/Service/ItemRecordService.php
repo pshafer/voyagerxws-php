@@ -2,9 +2,7 @@
 
 namespace VoyagerXWS\Service;
 
-use GuzzleHttp\Client;
-use GuzzleHttp\Psr7\Request;
-
+use VoyagerXWS\Client\VoyagerXWSClient;
 use VoyagerXWS\Exceptions\ServiceException;
 use VoyagerXWS\Response\ItemsRecordResponse;
 
@@ -12,7 +10,11 @@ class ItemRecordService
 {
     private $client;
 
-    public function __construct (Client $client) {
+    /**
+     * ItemRecordService constructor.
+     * @param \VoyagerXWS\Client\VoyagerXWSClient $client
+     */
+    public function __construct (VoyagerXWSClient $client) {
         $this->client = $client;
     }
 
@@ -27,15 +29,13 @@ class ItemRecordService
      */
     public function getRecord($bibid)
     {
-        $request = new Request('GET', 'record/' . $bibid . '/items?view=full');
-        $response = $this->client->send($request);
-
-        if($response->getStatusCode() === 200) {
-            $body = $response->getBody()->getContents();
+        $response = $this->client->getItemRecords(['bibid' => $bibid ]);
+        if($response['statusCode'] === 200) {
+            $body = $response['body']->getContents();
 
             return new ItemsRecordResponse($body);
         }
 
-        throw new ServiceException($response->getStatusCode(), "An error occurred communicating with API");
+        throw new ServiceException($response['statusResponse'], $response['statusCode']);
     }
 }

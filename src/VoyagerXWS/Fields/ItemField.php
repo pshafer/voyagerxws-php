@@ -1,9 +1,8 @@
 <?php
 
-namespace VoyagerXWS\Response\Fields;
+namespace VoyagerXWS\Fields;
 
 use Symfony\Component\DomCrawler\Crawler;
-use VoyagerXWS\Response\Fields\ItemDataField;
 use \DOMNode;
 
 class ItemField extends Crawler

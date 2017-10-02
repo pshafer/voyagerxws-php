@@ -7,11 +7,14 @@ use VoyagerXWS\Fields\LeaderField;
 use VoyagerXWS\Fields\ControlField;
 use VoyagerXWS\Fields\DataField;
 
-
 class MarcRecordResponse
 {
     private $domCrawler;
 
+    /**
+     * MarcRecordResponse constructor.
+     * @param $xmldoc text of xml document returned VoyagerXWS Record Service
+     */
     public function __construct($xmldoc)
     {
         if(isset($xmldoc))
@@ -89,7 +92,7 @@ class MarcRecordResponse
      * @param string $indicator2 - the second indicator value of the field to retieve
      * @return array of DataField objects
      */
-    public function getDataField($tagName, $indicator1=" ", $indicator2=" ")
+    public function getDataField($tagName, $indicator1 = NULL, $indicator2 = NULL)
     {
         $query = "//response/record/marcRecord/datafield{$this->dataFieldTagQueryFilter($tagName,$indicator1,$indicator2)}";
 
@@ -122,11 +125,12 @@ class MarcRecordResponse
     }
 
 
-    private function dataFieldTagQueryFilter($tag,$ind1=" ", $ind2=" ")
+    private function dataFieldTagQueryFilter($tag, $ind1 = NULL, $ind2 = NULL)
     {
         $filter = "@tag='$tag'";
-        $filter .= " and @ind1='$ind1'";
-        $filter .= " and @ind2='$ind2'";
+
+        $filter .= ($ind1) ? " and @ind1='$ind1'" : "";
+        $filter .= ($ind2) ? " and @ind2='$ind2'" : "";
 
         return "[$filter]";
     }

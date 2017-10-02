@@ -2,8 +2,6 @@
 
 namespace VoyagerXWS\Fields;
 
-use VoyagerXWS\Fields\Field;
-
 class LeaderField extends Field
 {
     public function __construct($domElement)

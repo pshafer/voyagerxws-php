@@ -3,12 +3,16 @@
 namespace VoyagerXWS\Response;
 
 use Symfony\Component\DomCrawler\Crawler;
-use VoyagerXWS\Response\Fields\ItemField;
+use VoyagerXWS\Fields\ItemField;
 
 class ItemsRecordResponse
 {
     private $domCrawler;
 
+    /**
+     * ItemsRecordResponse constructor.
+     * @param $xmldoc text of xml document returned from VoyagerXWS Item Service
+     */
     public function __construct($xmldoc)
     {
         if(isset($xmldoc))
