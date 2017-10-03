@@ -6,9 +6,9 @@
         <institution id="LOCAL">
             <instName>Rowan University Libraries</instName>
             <item href="http://library.rowan.edu:7014/vxws/record/583035/items/552054">
-                <itemData id="2" name="permLocation" code="Main">Campbell Library Stacks (3rd - 4th Floors)</itemData>
+                <itemData id="2" name="permLocation" code="Main">Library Stacks (3rd - 4th Floors)</itemData>
                 <itemData id="0" name="tempLocation"/>
-                <itemData id="2" name="location" code="Main">Campbell Library Stacks (3rd - 4th Floors)</itemData>
+                <itemData id="2" name="location" code="Main">Library Stacks (3rd - 4th Floors)</itemData>
                 <itemData name="callNumber">QA76.73.P22 L44 2010</itemData>
                 <itemData name="copy">c. 0</itemData>
                 <itemData name="itemBarcode">33001009547380</itemData>
@@ -41,10 +41,10 @@
                 <itemData name="onReserve">N</itemData>
                 <itemData name="shortLoanChgs">0</itemData>
                 <itemData name="createDate">2010-08-05</itemData>
-                <itemData name="createOperId">CollinsB</itemData>
+                <itemData name="createOperId">SomeUser</itemData>
                 <itemData name="createLocation">Campbell Library</itemData>
                 <itemData name="modifyDate">2016-01-12</itemData>
-                <itemData name="modifyOperId">BrownA</itemData>
+                <itemData name="modifyOperId">SomeUser</itemData>
                 <itemData name="modifyLocation">Campbell Library</itemData>
                 <itemData name="lastTrans">2016-12-16 07:38:58</itemData>
                 <itemData name="clusterId">1</itemData>
