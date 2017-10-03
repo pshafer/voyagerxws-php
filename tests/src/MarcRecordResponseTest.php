@@ -7,7 +7,7 @@ use VoyagerXWS\Fields\ControlField;
 
 use PHPUnit\Framework\TestCase;
 
-class MarcRecordResponseTest extends \PHPUnit\Framework\TestCase
+class MarcRecordResponseTest extends TestCase
 {
 
     /**
