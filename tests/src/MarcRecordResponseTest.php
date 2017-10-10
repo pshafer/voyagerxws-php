@@ -75,7 +75,12 @@ class MarcRecordResponseTest extends TestCase
     public function testGetControlField()
     {
 
-        $controlField = $this->response->getControlField('001');
+        $fields = $this->response->getControlField('001');
+
+        $this->assertInternalType('array', $fields);
+        $this->assertEquals(1, count($fields));
+        
+        $controlField = $fields[0];
 
         $this->assertInstanceOf(ControlField::class, $controlField);
         $this->assertEquals('001', $controlField->getTag());
@@ -91,6 +96,7 @@ class MarcRecordResponseTest extends TestCase
 
         $controlFields = $this->response->getControlFields();
 
+        $this->assertInternalType('array', $controlFields);
         $this->assertEquals(3,count($controlFields));
         foreach($controlFields as $controlField){
             $this->assertInstanceOf(ControlField::class, $controlField);

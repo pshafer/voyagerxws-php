@@ -53,15 +53,19 @@ class MarcRecordResponse
      *
      * @param $tagName the name of the tag to retreive such as '001' or '006', etc
      *
-     * @return ControlField or null
+     * @return array|null
      */
     public function getControlField($tagName)
     {
         $query = '//response/record/marcRecord/controlfield[@tag="' . $tagName . '"]';
         $controlField = $this->domCrawler->filterXPath($query)->first();
 
-        if($controlField){
-            return new ControlField($controlField);
+        $controlFields = $this->domCrawler->filterXPath($query)->each(function(Crawler $node) {
+           return new ControlField($node);
+        });
+
+        if(count($controlFields) > 0 ){
+            return $controlFields;
         }
 
         return null;
